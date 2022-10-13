@@ -7,7 +7,7 @@
  https://www.springframework.org/schema/beans/spring-beans.xsd
  http://www.springframework.org/schema/context
  http://www.springframework.org/schema/context/spring-context.xsd">
- <bean class="com.springcore.lifecycle.Product" name="product">
+ <bean class="com.springcore.lifecycle.Product" name="product" init-method="init" destroy-method="destroy">
  	<property name="price" value="100" />
  </bean>
 </beans>

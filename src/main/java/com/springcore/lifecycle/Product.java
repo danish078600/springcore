@@ -7,12 +7,14 @@ public class Product {
 		return price;
 	}
 
-	public void setPrice(int price) {
+	public void setPrice(int price) { 
+		System.out.println("setting price");
 		this.price = price;
 	}
 
 	public Product(int price) {
 		super();
+		
 		this.price = price;
 	}
 
@@ -25,5 +27,10 @@ public class Product {
 	public String toString() {
 		return "Product [price=" + price + "]";
 	}
-	
+	public void init() {
+		System.out.println("Inside init");
+	}
+	public void destroy() {
+		System.out.println("inside destroy");
+	}
 }
