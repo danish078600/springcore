@@ -12,6 +12,9 @@ public class Test {
 		Product p=(Product) context.getBean("product");
 		System.out.println(p);
 		context.registerShutdownHook();
+		System.out.println("===========");
+		Pepsi p1= (Pepsi) context.getBean("pepsi");
+		System.out.println(p1);
 	}
 
 }

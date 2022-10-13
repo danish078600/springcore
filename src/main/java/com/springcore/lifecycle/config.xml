@@ -10,4 +10,7 @@
  <bean class="com.springcore.lifecycle.Product" name="product" init-method="init" destroy-method="destroy">
  	<property name="price" value="100" />
  </bean>
+ <bean class="com.springcore.lifecycle.Pepsi" name="pepsi">
+ 	<property name="price" value="10" />
+ </bean>
 </beans>
